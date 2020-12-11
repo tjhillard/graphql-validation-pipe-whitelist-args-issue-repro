@@ -1,0 +1,18 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Author {
+  firstName: String
+  lastName: String!
+}
+
+type Query {
+  getAuthor(firstName: String, lastName: String = ""): Author!
+  getAuthorWithoutPipe(firstName: String, lastName: String = ""): Author!
+}
+
+type Mutation {
+  updateAuthor(firstName: String!): Author!
+  updateAuthorWithoutPipe(firstName: String!): Author!
+}
